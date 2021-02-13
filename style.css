@@ -7,3 +7,8 @@ html {
     display: grid;
     grid-template-columns: 1fr 50px 50px 50px 50px;
 }
+
+.inactive-link {
+    pointer-events: none;
+    cursor: default;
+}
