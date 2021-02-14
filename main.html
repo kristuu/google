@@ -53,10 +53,6 @@
         align-items: center;
     }
 
-    .izvelne:hover {
-        border: 15px solid #5f6368;
-    }
-
     .logo {
         display: flex;
         flex-direction: column;
@@ -99,6 +95,8 @@
 
     .mekletajs {
         display: flex;
+        flex-shrink: 0;
+        flex-grow: 1;
     }
 
     .ievade {
@@ -130,6 +128,81 @@
     .poga:focus {
         border-color: rgba(0, 0, 0, 0.87);
         outline: none;
+    }
+
+    .apaksdala {
+        flex-grow: 1;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .valoda {
+        color: #1a0dab;
+        padding: 0 3px;
+        text-decoration: none;
+    }
+
+    .valoda:hover {
+        text-decoration: underline;
+    }
+
+    .piedavajuma-dala {
+        font-size: small;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .piedavajums {
+        display: inline-block;
+        line-height: 28px;
+    }
+
+    .footer {
+        background: #f2f2f2;
+        box-sizing: border-box;
+        width: auto;
+    }
+
+    .pirmais-footer {
+        padding: 15px 30px;
+        border-bottom: 1px solid #dadce0;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.54);
+        text-decoration: none;
+    }
+
+    .otrais-footer {
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+    }
+
+    .kreisa-dala {
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .laba-dala {
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-saite {
+        color: #70757a;
+        display: block;
+        padding: 15px;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+    .footer-saite:hover {
+        text-decoration: underline;
     }
 </style>
 <body>
@@ -166,9 +239,31 @@
             <button class='poga' id='google-meklesana'>Google meklēšana</button>
             <button class='poga' id='google-meklesana'>Es ticu veiksmei!</button>
         </div>
+        <div class='apaksdala'>
+            <div class='piedavajuma-dala'>
+                <div class='piedavajums'>
+                    Google piedāvājums:  
+                    <a href='#' class='valoda'>lietuvių</a>
+                    <a href='#' class='valoda'>русский</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-
+    <div class='footer'>
+        <div class='pirmais-footer'>Latvija</div>
+        <div class='otrais-footer'>
+            <div class='kreisa-dala'>
+                <a class='footer-saite' href='#'>Plašāka informācija</a>
+                <a class='footer-saite' href='#'>Reklamēšana</a>
+                <a class='footer-saite' href='#'>Uzņēmējdarbība</a>
+                <a class='footer-saite' href='#'>Kā darbojas meklēšana</a>
+            </div>
+            <div class='laba-dala'>
+                <a class='footer-saite' href='#'>Konfidencialitāte</a>
+                <a class='footer-saite' href='#'>Noteikumi</a>
+                <a class='footer-saite' href='#'>Iestatījumi</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
